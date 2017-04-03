@@ -16,7 +16,7 @@ class App extends React.Component {
         		<div className="row">
         			<div className="col-xs-10 colxs-offset-1">
         				{/*Attribute can be access useing this.props.attributeName */}
-        				<Home name={"Max"} age={29} />
+        				<Home name={"Max"} initialAge={29} />
         			</div>
         		</div>
         	</div>
