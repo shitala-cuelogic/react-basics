@@ -8,11 +8,11 @@ var config = {
     output: {
         path: DIST_DIR + "/app",
         filename: "bundle.js",
-        publicPath: "/app/"
+        publicPath: "/app"
     },
     module: {
         loaders: [{
-            test: "/\.js?/",
+            test: /\.js?/,
             include: SRC_DIR,
             loader: "babel-loader",
             query: {
