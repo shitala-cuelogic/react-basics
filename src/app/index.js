@@ -5,6 +5,11 @@ import {Home} from "./components/Home";
 
 
 class App extends React.Component {
+
+    onGreet() {
+        alert("Hello!");
+    }
+
     render() {
         return (
         	<div className="container">
@@ -16,7 +21,7 @@ class App extends React.Component {
         		<div className="row">
         			<div className="col-xs-10 colxs-offset-1">
         				{/*Attribute can be access useing this.props.attributeName */}
-        				<Home name={"Max"} initialAge={29} />
+        				<Home name={"Max"} initialAge={29} greet={this.onGreet}/>
         			</div>
         		</div>
         	</div>
