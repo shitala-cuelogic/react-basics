@@ -1,6 +1,23 @@
 import React from "react";
 
 export class Home extends React.Component {
+	render() {
+		return (
+			<div> 
+				<h3> Home</h3>
+			</div>		
+		);
+	}
+}
+
+
+
+
+
+
+/*import React from "react";
+
+export class Home extends React.Component {
 
 	constructor(props) {
 		super();
@@ -81,4 +98,4 @@ Home.propTypes = {
 	initialAge: React.PropTypes.number,
 	greet: React.PropTypes.func,
 	initialLinkName: React.PropTypes.string
-};
+};*/

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
-    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --hot --inline",
+    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --hot --inline --history-api-fallback",
     "build-prod": "webpack -p && cp src/index.html dist/index.html"
   },
   "repository": {
@@ -29,6 +29,8 @@
   },
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-router": "4.0.0",
+    "react-router-dom": "4.0.0"
   }
 }

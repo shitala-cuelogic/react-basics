@@ -1,4 +1,30 @@
 import React from "react";
+import {render} from "react-dom";
+import {Route, BrowserRouter as Router} from "react-router-dom";
+
+import {Root} from "./components/Root";
+import {Home} from "./components/Home";
+import {User} from "./components/User";
+
+
+class App extends React.Component {
+    render() {
+        return (
+            <Router>
+                <div>
+                    <Route path={"/"} component={Root}/>
+                    <Route path={"/home"} component={Home}/>
+                    <Route path={"/user"} component={User}/>
+                </div>
+            </Router>
+
+        );
+    }
+}
+
+render(<App/>, window.document.getElementById("app"));
+
+/*import React from "react";
 import { render } from "react-dom";
 import {Header} from "./components/Header";
 import {Home} from "./components/Home";
@@ -47,7 +73,7 @@ class App extends React.Component {
         		</div>
         		<div className="row">
         			<div className="col-xs-10 colxs-offset-1">
-        				{/*Attribute can be access useing this.props.attributeName */}
+        				{"Attribute can be access useing this.props.attributeName"}
         				{homeCmp}
         			</div>
         		</div>
@@ -65,3 +91,4 @@ class App extends React.Component {
 render(<App/>, window.document.getElementById("app"));
 
 
+*/
