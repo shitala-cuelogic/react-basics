@@ -10,12 +10,11 @@ import {User} from "./components/User";
 class App extends React.Component {
     render() {
         return (
-            <Router>
-                <div>
-                    <Route path={"/"} component={Root}/>
+            <Router basename="/react-basic">
+                <Root>
                     <Route path={"/home"} component={Home}/>
                     <Route path={"/user"} component={User}/>
-                </div>
+                </Root>
             </Router>
 
         );
